@@ -35,7 +35,7 @@
 
     <p><strong>Приложение:</strong> Meet the Locals</p>
     <p><strong>Владелец:</strong> Nodir Negmatov</p>
-    <p><strong>Дата вступления в силу:</strong> 20 июля 2026 г.</p>
+    <p><strong>Дата вступления в силу:</strong> 22 июля 2026 г.</p>
 
     <p>
       Эта Политика описывает, какие данные собирает мобильное приложение
@@ -55,8 +55,8 @@
           <td>При регистрации и входе.</td>
         </tr>
         <tr>
-          <td>Профиль (имя и указанные вами данные)</td>
-          <td>Персонализация аккаунта; для хозяев — представление впечатлений.</td>
+          <td>Профиль: имя, фото, язык и валюта; по желанию — телефон и ссылки на соцсети</td>
+          <td>Персонализация аккаунта; для хозяев — представление впечатлений. Телефон и соцсети другим пользователям не показываются.</td>
           <td>При редактировании профиля.</td>
         </tr>
         <tr>
@@ -75,9 +75,14 @@
           <td>Только когда вы сами выбираете фото.</td>
         </tr>
         <tr>
-          <td>Бронирования, отзывы, сообщения</td>
+          <td>Бронирования, отзывы, сообщения, избранное, подписки и сохранённые поиски</td>
           <td>Работа основного сервиса.</td>
           <td>При использовании этих функций.</td>
+        </tr>
+        <tr>
+          <td>История просмотров впечатлений</td>
+          <td>Персональные рекомендации внутри Приложения. Другим пользователям не видна.</td>
+          <td>Когда вы просматриваете впечатления, войдя в аккаунт.</td>
         </tr>
         <tr>
           <td>Токен push-уведомлений</td>
@@ -94,13 +99,14 @@
       <li>Отправка уведомлений о статусе бронирования и сообщениях.</li>
       <li>Безопасность и предотвращение злоупотреблений.</li>
     </ul>
-    <p>Мы <strong>не продаём</strong> ваши персональные данные и не используем их для стороннней рекламы.</p>
+    <p>Мы <strong>не продаём</strong> ваши персональные данные и не используем их для сторонней рекламы.</p>
 
     <h2>Где хранятся данные</h2>
     <p>Для работы сервиса мы используем следующих обработчиков данных:</p>
     <ul>
       <li><strong>Supabase</strong> — аутентификация, база данных и хранение файлов.</li>
-      <li><strong>Expo</strong> — доставка push-уведомлений.</li>
+      <li><strong>Expo</strong> — доставка push-уведомлений и обновлений приложения.</li>
+      <li><strong>Google Firebase Cloud Messaging</strong> — доставка push-уведомлений на устройства Android.</li>
     </ul>
 
     <h2>Хранение и удаление</h2>
@@ -108,6 +114,17 @@
       Данные хранятся, пока ваша учётная запись активна. При удалении аккаунта
       связанные персональные данные удаляются или обезличиваются, кроме случаев,
       когда закон требует их сохранить.
+    </p>
+
+    <h2 id="delete-account">Удаление аккаунта</h2>
+    <p>
+      Чтобы удалить учётную запись и связанные с ней данные, отправьте письмо на
+      <strong>negnodir@gmail.com</strong> с адреса, на который зарегистрирован
+      аккаунт, с темой «Удаление аккаунта». Мы удалим аккаунт в течение 30 дней.
+      Будут удалены профиль (включая телефон и соцсети), фотографии, избранное,
+      история просмотров, сообщения и push-токены; записи о бронированиях и
+      отзывы могут быть обезличены, а не удалены, чтобы сохранить целостность
+      истории бронирований хозяев.
     </p>
 
     <h2>Ваши права</h2>
@@ -129,7 +146,7 @@
     <hr id="english" style="margin: 3em 0;" />
 
     <h1>Privacy Policy (English)</h1>
-    <p><strong>App:</strong> Meet the Locals · <strong>Provider:</strong> Nodir Negmatov · <strong>Effective:</strong> 20 July 2026</p>
+    <p><strong>App:</strong> Meet the Locals · <strong>Provider:</strong> Nodir Negmatov · <strong>Effective:</strong> 22 July 2026</p>
 
     <p>
       This Policy explains what data the Meet the Locals mobile application
@@ -139,11 +156,12 @@
     <h2>Data we collect</h2>
     <ul>
       <li><strong>Email &amp; password</strong> — to create and secure your account.</li>
-      <li><strong>Profile details</strong> — to personalize your account and present experiences.</li>
+      <li><strong>Profile details</strong> — name, photo, language and currency; optionally a phone number and social links (never shown to other users) — to personalize your account and present experiences.</li>
       <li><strong>Approximate &amp; precise location</strong> — to recommend nearby experiences (only with your permission; never published to other users).</li>
       <li><strong>Camera</strong> — hosts scan a guest's booking QR code (only when you open the scanner).</li>
       <li><strong>Photos</strong> — to upload experience and profile images (only ones you choose).</li>
-      <li><strong>Bookings, reviews, messages</strong> — to operate the core service.</li>
+      <li><strong>Bookings, reviews, messages, favorites, follows &amp; saved searches</strong> — to operate the core service.</li>
+      <li><strong>Experience view history</strong> — for in-app personalized recommendations; not visible to other users.</li>
       <li><strong>Push notification token</strong> — to notify you about bookings and messages.</li>
     </ul>
 
@@ -155,7 +173,7 @@
     </p>
 
     <h2>Processors</h2>
-    <p><strong>Supabase</strong> (authentication, database, file storage) and <strong>Expo</strong> (push notification delivery).</p>
+    <p><strong>Supabase</strong> (authentication, database, file storage), <strong>Expo</strong> (push notification and app update delivery), and <strong>Google Firebase Cloud Messaging</strong> (push delivery on Android devices).</p>
 
     <h2>Retention &amp; your rights</h2>
     <p>
@@ -163,6 +181,17 @@
       data is deleted or anonymized unless the law requires retention. You can
       edit your profile in-app, revoke camera/photo/location/notification
       permissions in device settings, and request access or deletion by email.
+    </p>
+
+    <h2 id="delete-account-en">Account deletion</h2>
+    <p>
+      To delete your account and associated data, email
+      <strong>negnodir@gmail.com</strong> from the address your account is
+      registered with, subject "Delete account". We will delete the account
+      within 30 days. Your profile (including phone and social links), photos,
+      favorites, view history, messages, and push tokens are deleted; booking
+      records and reviews may be anonymized rather than deleted to preserve the
+      integrity of hosts' booking history.
     </p>
 
     <h2>Children</h2>
